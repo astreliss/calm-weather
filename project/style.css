@@ -1,7 +1,7 @@
 body {
     background-color: #BFC1C8;
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #6c7279;
 }
@@ -38,6 +38,7 @@ p {
     top: 0;
     left: 0;
     z-index: 1000;
+    background-color: #1e202b;
 }
 
 .header__inner {
@@ -45,4 +46,50 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
+
+.header__logo {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.site__title {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+/* Nav
+===================*/
+.nav {
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.nav__link {
+    margin-left: 50px;
+    padding: 5px 25px;
+    color: #fff;
+    text-decoration: none;
+    opacity: .75;
+    transition: opacity .1s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+.nav__link:hover {
+    opacity: 1;
+    background-color: #009AD8;
+    border-radius: 15px;
+    transition: background-color .1s linear;
+}
+
