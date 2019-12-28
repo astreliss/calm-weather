@@ -1,9 +1,9 @@
 body {
-    background-color: #BFC1C8;
+    background-color: #1e202b;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #6c7279;
+    color: #fff;
 }
 
 *,
@@ -118,7 +118,7 @@ p {
     width: 100%;
     padding: 20px 50px 20px 20px;
     background: #1e202b;
-    color: white; 
+    color: #fff; 
     border-radius: 50px;
     border: none;
     outline: none;
@@ -134,4 +134,106 @@ p {
     background-color: #009AD8;
     color: #fff;
     border: none;
+    cursor: pointer;
 }
+
+/* Forecast table 
+========================*/
+    .forecast-container {
+      width: 100%;
+      background: #323544;
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-top: -150px;
+      margin-bottom: 50px;
+      padding: 0 20px;
+}
+
+      .forecast {
+    display: table-cell;
+    vertical-align: top;
+}  
+
+    .forecast .today {
+        width: 420px;
+}
+    .forecast-header {
+     *zoom: 1;
+}
+    .forecast:after {
+        content: " ";
+        clear: both;
+        display: block;
+        overflow: hidden;
+        height: 0;
+}
+
+    .day {
+        float: left;
+}
+
+    .date {
+        float: right;
+}
+      
+
+    .forecast-content {
+        text-align: left;
+        padding-top: 30px;
+        padding-bottom: 30px;
+}
+
+    .location {
+        font-size: 18px;
+        font-weight: 400;
+}
+
+       
+    .num, .forecast-icon {
+        display: inline-block;
+        vertical-align: middle;
+}
+
+    .num {
+        font-size: 90px;
+        margin-right: 30px;
+}
+      
+
+    span {
+        margin-right: 20px;
+}
+
+    img {
+        margin-right: 5px;
+        vertical-align: middle;
+}
+      
+
+    .forecast-header {
+        background: rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        font-weight: 400;
+        margin: 0 -20px;
+}
+
+    .forecast-icon {
+        height: 50px;
+        margin-bottom: 20px;
+}
+
+
+    .degree {
+        font-size: 24px;
+        color: #fff;
+        font-weight: 700;
+}
+
+     small {
+        font-size: 16px;
+}
+    
