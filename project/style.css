@@ -49,18 +49,6 @@ p {
     flex-wrap: wrap;
 }
 
-/*
-.logo__container  {
-    float: left;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 10px;
-    font-size: 16px;
-    
-    
-}
-*/
 
 .header__logo {
     width: 200px;
@@ -93,7 +81,7 @@ p {
 
 .nav__link {
     margin-left: 30px;
-    padding: 5px 25px;
+    padding: 10px 25px;
     color: #fff;
     text-decoration: none;
     opacity: .75;
@@ -107,7 +95,43 @@ p {
 .nav__link:hover {
     opacity: 1;
     background-color: #009AD8;
-    border-radius: 15px;
+    border-radius: 50px;
     transition: background-color .1s linear;
 }
 
+/* Form 
+========================*/
+.divider {
+      background-image: url(../images/banner.png);
+      margin-top: 140px;
+      background-size: cover;
+      padding: 70px 0;
+      min-height: 350px; 
+}
+
+.find-location {
+      position: relative;
+      margin-bottom: 70px; 
+}
+
+.find-location input[type="text"] {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white; 
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+
+.find-location input[type="submit"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px; 
+    border-radius: 50px;
+    background-color: #009AD8;
+    color: #fff;
+    border: none;
+}
