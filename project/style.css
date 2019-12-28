@@ -2,7 +2,7 @@ body {
     background-color: #BFC1C8;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #6c7279;
 }
 
@@ -49,20 +49,38 @@ p {
     flex-wrap: wrap;
 }
 
-.header__logo {
+/*
+.logo__container  {
     float: left;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10px;
     font-size: 16px;
-    margin-bottom: 5px;
+    
+    
+}
+*/
+
+.header__logo {
+    width: 200px;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 16px;
+    
 }
 
 .site__title {
+    padding: 10px;
     font-size: 14px;
     color: #fff;
     text-decoration: none;
-    
+    text-transform: uppercase;
+    float: right;
+    text-align: center;
 }
 
 /* Nav
@@ -74,7 +92,7 @@ p {
 }
 
 .nav__link {
-    margin-left: 50px;
+    margin-left: 30px;
     padding: 5px 25px;
     color: #fff;
     text-decoration: none;
