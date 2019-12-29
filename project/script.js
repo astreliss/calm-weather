@@ -1,4 +1,15 @@
-fetch('http://api.openweathermap.org/data/2.5/weather?q=Minsk&appid=e4f300b5055c9d0d0a83534a0a0675b2')
+    let form = document.querySelector('.find-location');
+    let button = form.querySelector('.submit-button');
+    let city = document.querySelector('.city');
+//    form.addEventListener ('submit', function(event){
+//        event.preventDefault ();
+//        return (city.value);
+//    })
+    button.onclick = function() {
+    let town = city.value;  
+    
+    console.log('http://api.openweathermap.org/data/2.5/weather?q='+town+'&appid=5e31b82625dea5211a835e4f19b5117e');
+    fetch('http://api.openweathermap.org/data/2.5/weather?q='+town+'&appid=5e31b82625dea5211a835e4f19b5117e')
     .then(function(resp) { return resp.json() })
     .then(function(data) {
     console.log(data);
@@ -29,4 +40,6 @@ fetch('http://api.openweathermap.org/data/2.5/weather?q=Minsk&appid=e4f300b5055c
         month: 'long'       
       })}`;
 
+    
 });
+        };
