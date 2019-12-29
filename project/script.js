@@ -18,6 +18,7 @@
     document.querySelector('.num').innerHTML = Math.round(data.main.temp - 273) + '&deg;';
     document.querySelector('.wind').textContent = data.wind.speed + 'm/s';
     document.querySelector('.wind-deg').innerHTML = data.wind.deg + '&deg;';
+    document.querySelector('.forecast-icon').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png" width=90>`;
     let date = new Date();
     let day = date.getDay();
     if (day==0) {
