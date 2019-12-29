@@ -192,7 +192,7 @@ p {
 }
 
        
-    .num, .forecast-icon {
+    .num, .icon-container {
         display: inline-block;
         vertical-align: middle;
 }
@@ -221,7 +221,7 @@ p {
         margin: 0 -20px;
 }
 
-    .forecast-icon {
+    .icon-container {
         height: 50px;
         margin-bottom: 20px;
 }
