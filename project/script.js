@@ -25,9 +25,8 @@ fetch('http://api.openweathermap.org/data/2.5/weather?q=Minsk&appid=e4f300b5055c
         day = 'Saturday';
     }
     document.querySelector('.day').textContent = day;
-    String(date);
-    document.querySelector('.date').textContent = date.toLocaleString('en', {       
+    document.querySelector('.date').textContent = `${date.getDate()} ${date.toLocaleString('en', {       
         month: 'long'       
-      });
+      })}`;
 
 });
